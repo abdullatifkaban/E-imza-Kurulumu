@@ -34,7 +34,7 @@ java -version
 </details>
 
 
-## E-imza Araçlarını Yükleme
+## 2. E-imza Araçlarını Yükleme
 
 <details>
 <summary><b>Arch Linux</b></summary>
@@ -87,7 +87,7 @@ pcsc_scan
 ```
 </details>
 
-## Atatürk Üniversitesi E-İmza Aracını Kurma
+## 3. Atatürk Üniversitesi E-İmza Aracını Kurma
 
 Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde çalışıyor. Bunun için klasörü buraya kopyalayalım.
 
