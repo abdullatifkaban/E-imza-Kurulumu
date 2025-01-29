@@ -4,12 +4,25 @@
 
 ## 1. Java Kurulumu
 
-#### Arch Linux
 
 E-imza araçları Java'nın 8. sürümü ile uyumlu çalışmaktadır.
+
+<details open>
+<summary>Arch Linux</summary>
+
 ```
 sudo pacman -S jdk8-openjdk
 ```
+</details>
+
+<details>
+<summary>Ubuntu</summary>
+
+```
+sudo apt install openjdk-8-jdk
+```
+</details>
+
 Kurulumu kontrol edelim
 ```
 java -version
@@ -17,7 +30,8 @@ java -version
 
 ## E-imza Araçlarını Yükleme
 
-### Arch Linux
+<details open>
+<summary><b>Arch Linux</b></summary>
 
 Usb Araçlarını kuralım
 ```
@@ -28,6 +42,7 @@ Kart Okuyucu takılımı diye kontrol edelim
 lsusb
 ```
 PC/SC İstemcisi ve Kütüphaneleri:
+
 ACR 38T kart okuyucusu için gerekli olan libpcsclite paketini yükleyelim
 ```
 sudo pacman -S pcsclite
@@ -45,6 +60,27 @@ Bu servisin sistem başlangıcında otomatik olarak başlamasını sağlayalım
 ```
 sudo systemctl enable pcscd
 ```
+</details>
+
+<details open>
+<summary><b>Ubuntu</b></summary>
+
+Kart Okuyucu takılımı diye kontrol edelim
+```
+lsusb
+```
+PC/SC İstemcisi ve Kütüphaneleri:
+
+ACR 38T kart okuyucusu için gerekli olan libpcsclite paketini yükleyelim
+```
+sudo apt install pcscd pcsc-tools
+```
+Kart okuyucunun bilgisayarına bağlı olduğundan emin olmak için aşağıdaki komutu çalıştırarak okuyucunun tanınıp tanınmadığını kontrol edelim:
+```
+pcsc_scan
+```
+</details>
+
 ## Atatürk Üniversitesi E-İmza Aracını Kurma
 
 Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde çalışıyor. Bunun için klasörü buraya kopyalayalım.
