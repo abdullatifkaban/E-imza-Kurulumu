@@ -93,6 +93,8 @@ Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde
 
 > AtaBaumUbysSigner dosyasını [buradan](AtaBaumUbysSigner.zip) indirebilirsiniz.
 
+İndirdiğiniz sıkıştırılmış dosyayı çıkardığınız klasörde aşağıdaki komutu çalıştırıp kopyalama işlemini yapalım:  
+
 ```
 sudo cp -r AtaBaumUbysSigner /root
 ```
