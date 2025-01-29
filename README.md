@@ -7,11 +7,16 @@
 
 E-imza araçları Java'nın 8. sürümü ile uyumlu çalışmaktadır.
 
-<details open>
+<details>
 <summary>Arch Linux</summary>
 
 ```
 sudo pacman -S jdk8-openjdk
+```
+
+Kurulumu kontrol edelim
+```
+java -version
 ```
 </details>
 
@@ -21,16 +26,17 @@ sudo pacman -S jdk8-openjdk
 ```
 sudo apt install openjdk-8-jdk
 ```
-</details>
 
 Kurulumu kontrol edelim
 ```
 java -version
 ```
+</details>
+
 
 ## E-imza Araçlarını Yükleme
 
-<details open>
+<details>
 <summary><b>Arch Linux</b></summary>
 
 Usb Araçlarını kuralım
@@ -62,7 +68,7 @@ sudo systemctl enable pcscd
 ```
 </details>
 
-<details open>
+<details>
 <summary><b>Ubuntu</b></summary>
 
 Kart Okuyucu takılımı diye kontrol edelim
