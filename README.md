@@ -110,7 +110,7 @@ cd /root/AtaBaumUbysSigner/
 ```
 java -jar AtaBaumUbysSigner.jar
 ```
-Bu işlemler bittikten sonra, hem tarayıcınızı yeniden başlattıktan sonra imza atabilirsiniz. Eğer ilk çalıştırmada `AtaBaumUbysSigner` kapanırsa yukarıdaki komutla yeniden çalıştırabilirsiniz. 
+Bu işlemler bittikten sonra, hemen tarayıcınızı yeniden başlatıp ardından imza atabilirsiniz. Eğer ilk çalıştırmada `AtaBaumUbysSigner` kapanırsa yukarıdaki komutla yeniden çalıştırabilirsiniz. 
 
 >Her seferinde çalıştırmak için yukarıdaki adımları uygulayacak bir script kullanabilirsiniz. Örnek scripti [buradan](eimza.desktop) indirebilirsiniz. İndirdiğiniz dosyayı çalıştırılabilir hale getirmek için dosyanın bulunduğu klasörde aşağıdaki terminal komutunu çalıştırın
 ```
