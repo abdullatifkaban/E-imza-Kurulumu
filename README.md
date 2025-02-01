@@ -1,6 +1,6 @@
 # Linux E-İmza Kurulum Rehberi
 
-![acs](acs_beyaz.png)
+![acs](source/acs_beyaz.png)
 
 `ACS - ACR 38T` Model kart okuyucularının Arch Linux ve Ubuntu işletim sistemleri üzerindeki kullanımı için bu rehberi hazırladım. Farklı linux dağıtımlarını kullandıkça buraya eklemeler yapacağım.
 
@@ -35,6 +35,18 @@ java -version
 ```
 </details>
 
+> [!WARNING]
+> Eğer sisteminizde Java'nın farklı sürümleri de varsa aktif sürümü değiştirmeniz gerekir. Bunun için aşağıdaki komutu kullanabilirsiniz.
+
+```
+sudo update-alternatives --config java
+```
+
+![java](source/java.png)
+
+Yukarıdaki komutu çalıştırınca sisteminizde yüklü Java sürümlerinin listesini verip sizden bir sayı istenecek. Başında `*` bulunan satır o anda aktif olan Java sürümünü göstermektedir. Bu aşamada **Java 8**'in bulundğu satır numarasını girip `Enter` tuşuna basarak sürüm değiştirme işlemini tamamlayınız.
+
+> Başka programlar güncel Java sürümü isteyebilirler. Bu yöntemle sürümü değiştirip kullanabilirsiniz. Ancak imza atmak için tekrar **Java 8**'i aktif etmelisiniz. 
 
 ## 2. E-imza Araçlarını Yükleme
 
@@ -93,7 +105,7 @@ pcsc_scan
 
 Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde çalışıyor. Bunun için klasörü buraya kopyalayalım.
 
-> AtaBaumUbysSigner dosyasını [buradan](AtaBaumUbysSigner.zip) indirebilirsiniz.
+> AtaBaumUbysSigner dosyasını [buradan](source/AtaBaumUbysSigner.zip) indirebilirsiniz.
 
 İndirdiğiniz sıkıştırılmış dosyayı çıkardığınız klasörde aşağıdaki komutu çalıştırıp kopyalama işlemini yapalım:  
 
@@ -114,7 +126,7 @@ java -jar AtaBaumUbysSigner.jar
 ```
 Bu işlemler bittikten sonra, hemen tarayıcınızı yeniden başlatıp ardından imza atabilirsiniz. Eğer ilk çalıştırmada `AtaBaumUbysSigner` kapanırsa yukarıdaki komutla yeniden çalıştırabilirsiniz. 
 
->Her seferinde çalıştırmak için yukarıdaki adımları uygulayacak bir script kullanabilirsiniz. Örnek scripti [buradan](eimza.desktop) indirebilirsiniz. İndirdiğiniz dosyayı çalıştırılabilir hale getirmek için dosyanın bulunduğu klasörde aşağıdaki terminal komutunu çalıştırın
+>Her seferinde çalıştırmak için yukarıdaki adımları uygulayacak bir script kullanabilirsiniz. Örnek scripti [buradan](source/eimza.desktop) indirebilirsiniz. İndirdiğiniz dosyayı çalıştırılabilir hale getirmek için dosyanın bulunduğu klasörde aşağıdaki terminal komutunu çalıştırın
 ```
 chmod +x eimza.desktop
 ```
