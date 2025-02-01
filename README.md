@@ -1,6 +1,8 @@
 # Linux E-İmza Kurulum Rehberi
 
-`ACS - ACR 38T` Model kart okuyucularının Arch Linux sistemi üzerindeki kullanımı için bu rehberi hazırladım. Farklı linux dağıtımlarını kullandıkça buraya eklemeler yapacağım.
+![acs](acs_beyaz.png)
+
+`ACS - ACR 38T` Model kart okuyucularının Arch Linux ve Ubuntu işletim sistemleri üzerindeki kullanımı için bu rehberi hazırladım. Farklı linux dağıtımlarını kullandıkça buraya eklemeler yapacağım.
 
 ## 1. Java Kurulumu
 
