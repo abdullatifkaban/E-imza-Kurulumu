@@ -10,7 +10,7 @@
 E-imza araçları Java'nın 8. sürümü ile uyumlu çalışmaktadır.
 
 <details>
-<summary>Arch Linux</summary>
+<summary><b>Arch Linux</b></summary>
 
 ```
 sudo pacman -S jdk8-openjdk
@@ -23,7 +23,7 @@ java -version
 </details>
 
 <details>
-<summary>Ubuntu</summary>
+<summary><b>Ubuntu</b></summary>
 
 ```
 sudo apt install openjdk-8-jdk
