@@ -46,6 +46,7 @@ sudo update-alternatives --config java
 
 Yukarıdaki komutu çalıştırınca sisteminizde yüklü Java sürümlerinin listesini verip sizden bir sayı istenecek. Başında `*` bulunan satır o anda aktif olan Java sürümünü göstermektedir. Bu aşamada **Java 8**'in bulundğu satır numarasını girip `Enter` tuşuna basarak sürüm değiştirme işlemini tamamlayınız.
 
+> [!TIP]
 > Başka programlar güncel Java sürümü isteyebilirler. Bu yöntemle sürümü değiştirip kullanabilirsiniz. Ancak imza atmak için tekrar **Java 8**'i aktif etmelisiniz. 
 
 ## 2. E-imza Araçlarını Yükleme
@@ -105,6 +106,7 @@ pcsc_scan
 
 Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde çalışıyor. Bunun için klasörü buraya kopyalayalım.
 
+> [!IMPORTANT]
 > AtaBaumUbysSigner dosyasını [buradan](source/AtaBaumUbysSigner.zip) indirebilirsiniz.
 
 İndirdiğiniz sıkıştırılmış dosyayı çıkardığınız klasörde aşağıdaki komutu çalıştırıp kopyalama işlemini yapalım:  
@@ -126,8 +128,11 @@ java -jar AtaBaumUbysSigner.jar
 ```
 Bu işlemler bittikten sonra, hemen tarayıcınızı yeniden başlatıp ardından imza atabilirsiniz. Eğer ilk çalıştırmada `AtaBaumUbysSigner` kapanırsa yukarıdaki komutla yeniden çalıştırabilirsiniz. 
 
+> [!NOTE]
 >Her seferinde çalıştırmak için yukarıdaki adımları uygulayacak bir script kullanabilirsiniz. Örnek scripti [buradan](source/eimza.desktop) indirebilirsiniz. İndirdiğiniz dosyayı çalıştırılabilir hale getirmek için dosyanın bulunduğu klasörde aşağıdaki terminal komutunu çalıştırın
 ```
 chmod +x eimza.desktop
 ```
+
+> [!TIP]
 > Dosya ile işiniz bittiğinde kapatmak için komutun çalıştığı terminalde `Ctrl+C` kısa yolunu kullanabilirsiniz.
