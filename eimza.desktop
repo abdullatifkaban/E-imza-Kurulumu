@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Name=AtaBaumUbysSigner
+Exec=sudo su -c 'cd /root/AtaBaumUbysSigner && java -jar AtaBaumUbysSigner.jar'
+Icon=utilities-terminal
