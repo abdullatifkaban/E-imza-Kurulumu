@@ -35,7 +35,7 @@ java -version
 ```
 </details>
 
-> [!WARNING] Uyarı!
+> [!WARNING]
 > Eğer sisteminizde Java'nın farklı sürümleri de varsa aktif sürümü değiştirmeniz gerekir. Bunun için aşağıdaki komutu kullanabilirsiniz.
 
 ```
