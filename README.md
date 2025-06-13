@@ -102,7 +102,20 @@ pcsc_scan
 ```
 </details>
 
-## 3. Atatürk Üniversitesi E-İmza Aracını Kurma
+## 3. Akis Akıllı Kart Sürücüsü Yükleme
+
+Akıllı kart için gerekli olan sürücü dosyalarını bilgisayarınıza [Kamu Sertifikasyon Merkezinin web sayfasından](https://kamusm.bilgem.tubitak.gov.tr/islemler/surucu_yukleme_servisi/) indirip, kurunuz. 
+
+Sayfada Ubuntu için `*.deb` paketi bulunmaktadır. İlgili paketi indirdiğiniz klasörde aşağıdaki komutu çalıştırarak kurabilirsiniz:
+
+```
+sudo dpkg -i Akia_linux_6_5_4.deb  
+```
+
+> [!IMPORTANT]
+> Arch Linux `deb` paketini desteklemediği için bu paketi dönüştürmeniz gerekebilir.
+
+## 4. Atatürk Üniversitesi E-İmza Aracını Kurma
 
 Linux sistemlerinde E-İmza aracı `AtaBaumUbysSigner` `/root` klasörü içinde çalışıyor. Bunun için klasörü buraya kopyalayalım.
 
